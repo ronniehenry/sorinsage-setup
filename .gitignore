@@ -1,0 +1,15 @@
+# SorinSage Setup — .gitignore
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+
+# Secrets — never commit these
+*.env
+secrets/
+credentials/
