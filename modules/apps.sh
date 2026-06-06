@@ -26,7 +26,7 @@ sudo apt install -y \
   wget \
   git \
   htop \
-  neofetch \
+  fastfetch \
   ripgrep \
   fd-find \
   bat \
@@ -46,15 +46,10 @@ ok "apt packages installed."
 log "Installing Flatpak apps..."
 
 FLATPAKS=(
-  # Browsers
-  org.mozilla.firefox
 
   # Creative / Content
-  org.gimp.GIMP
-  org.inkscape.Inkscape
-  com.obsproject.Studio
-  org.kdenlive.kdenlive
   com.github.PintaProject.Pinta
+  org.kde.kdenlive
 
   # Productivity / Notes
   md.obsidian.Obsidian
@@ -66,8 +61,6 @@ FLATPAKS=(
   com.github.tchx84.Flatseal
   io.github.flattool.Warehouse
 
-  # Dev
-  cc.arduino.IDE2
 )
 
 for app in "${FLATPAKS[@]}"; do

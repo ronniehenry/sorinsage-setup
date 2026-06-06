@@ -50,13 +50,13 @@ fi
 # -----------------------------------------------------------------------------
 # PlatformIO Core (CLI)
 # -----------------------------------------------------------------------------
-if ! command -v pio &>/dev/null; then
-  log "Installing PlatformIO Core..."
-  pip3 install --user platformio
-  ok "PlatformIO Core installed."
-else
-  ok "PlatformIO already present — skipping."
-fi
+# if ! command -v pio &>/dev/null; then
+#   log "Installing PlatformIO Core..."
+#   pip3 install --user platformio
+#   ok "PlatformIO Core installed."
+# else
+#   ok "PlatformIO already present — skipping."
+# fi
 
 # -----------------------------------------------------------------------------
 # Arduino IDE 2 (Flatpak)
