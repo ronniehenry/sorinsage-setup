@@ -41,7 +41,7 @@ fi
 sudo -v || err "sudo privileges required."
 
 # Module list
-ALL_MODULES=(embedded gnome apps fonts)
+ALL_MODULES=(gnome apps fonts embedded)
 
 run_module() {
   local mod="$1"
