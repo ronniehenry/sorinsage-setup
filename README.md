@@ -1,4 +1,4 @@
-# SorinSage Setup
+# SorinSage Setup (still WIP)
 
 > Post-install scripts for a calm, intentional Ubuntu 26.04 LTS desktop.
 > Built around the SorinSage aesthetic — soft-masculine, minimal, GNOME-first.
