@@ -20,6 +20,7 @@ sudo apt install -y \
   python3 \
   python3-pip \
   python3-venv \
+  python-is-python3 \
   openocd \
   stlink-tools \
   gdb-multiarch \
@@ -61,13 +62,13 @@ fi
 # -----------------------------------------------------------------------------
 # Arduino IDE 2 (Flatpak)
 # -----------------------------------------------------------------------------
-if ! flatpak list 2>/dev/null | grep -q "cc.arduino.IDE2"; then
-  log "Installing Arduino IDE 2 via Flatpak..."
-  flatpak install -y flathub cc.arduino.IDE2
-  ok "Arduino IDE 2 installed."
-else
-  ok "Arduino IDE 2 already present — skipping."
-fi
+# if ! flatpak list 2>/dev/null | grep -q "cc.arduino.IDE2"; then
+#   log "Installing Arduino IDE 2 via Flatpak..."
+#   flatpak install -y flathub cc.arduino.IDE2
+#   ok "Arduino IDE 2 installed."
+# else
+#   ok "Arduino IDE 2 already present — skipping."
+# fi
 
 # -----------------------------------------------------------------------------
 # udev rules for STM32 (ST-Link) and ESP32 (CP210x, CH340)

@@ -36,9 +36,9 @@ gsettings set org.gnome.desktop.interface font-hinting 'slight'
 
 # System font — Atkinson Hyperlegible
 # (Ensure fonts module runs first, or font may not be available yet)
-gsettings set org.gnome.desktop.interface font-name 'Atkinson Hyperlegible 11'
-gsettings set org.gnome.desktop.interface document-font-name 'Atkinson Hyperlegible 11'
-gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 10'
+# gsettings set org.gnome.desktop.interface font-name 'Atkinson Hyperlegible 11'
+# gsettings set org.gnome.desktop.interface document-font-name 'Atkinson Hyperlegible 11'
+# gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 10'
 
 # Night Light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
