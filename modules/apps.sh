@@ -36,7 +36,18 @@ sudo apt install -y \
   vlc \
   gimp \
   inkscape \
-  obs-studio
+  obs-studio \
+  solaar \
+  timeshift \
+  transmission-gtk \
+  fuse
+
+# install media player
+cd ~/Downloads
+wget https://files.strawberrymusicplayer.org/strawberry_1.2.20-resolute_amd64.deb
+sudo apt install strawberry_1.2.20-resolute_amd64.deb -y
+rm strawberry_1.2.20-resolute_amd64.deb
+cd ~
 
 ok "apt packages installed."
 
@@ -48,18 +59,18 @@ log "Installing Flatpak apps..."
 FLATPAKS=(
 
   # Creative / Content
-  com.github.PintaProject.Pinta
   org.kde.kdenlive
+  fr.handbrake.ghb
 
   # Productivity / Notes
-  md.obsidian.Obsidian
+
 
   # Communication
-  com.discordapp.Discord
-
+ 
   # Utilities
   com.github.tchx84.Flatseal
   io.github.flattool.Warehouse
+  it.mijorus.gearlever
 
 )
 

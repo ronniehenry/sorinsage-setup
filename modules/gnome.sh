@@ -17,8 +17,7 @@ log "Installing GNOME extension tools..."
 sudo apt install -y \
   gnome-shell-extension-manager \
   gnome-tweaks \
-  gnome-shell-extensions \
-  chrome-gnome-shell
+  gnome-shell-extensions
 
 ok "GNOME tools installed."
 
@@ -33,16 +32,6 @@ gsettings set org.gnome.desktop.interface clock-format '12h'
 # Font rendering
 gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'
 gsettings set org.gnome.desktop.interface font-hinting 'slight'
-
-# System font — Atkinson Hyperlegible
-# (Ensure fonts module runs first, or font may not be available yet)
-# gsettings set org.gnome.desktop.interface font-name 'Atkinson Hyperlegible 11'
-# gsettings set org.gnome.desktop.interface document-font-name 'Atkinson Hyperlegible 11'
-# gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 10'
-
-# Night Light
-gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 3700
 
 # Workspaces
 gsettings set org.gnome.mutter dynamic-workspaces true
