@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # =============================================================================
 # SorinSage Setup — Ubuntu 26.04 LTS Post-Install Runner
-# https://github.com/sorinsage/sorinsage-setup
+# https://github.com/ronniehenry/sorinsage-setup
 # =============================================================================
 # Usage:
 #   ./install.sh              → runs all modules

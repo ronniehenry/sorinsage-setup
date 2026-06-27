@@ -27,9 +27,6 @@ sudo apt install -y \
   git \
   htop \
   fastfetch \
-  ripgrep \
-  fd-find \
-  bat \
   unzip \
   p7zip-full \
   ffmpeg \
@@ -37,7 +34,6 @@ sudo apt install -y \
   gimp \
   inkscape \
   obs-studio \
-  solaar \
   timeshift \
   transmission-gtk \
   fuse
@@ -64,13 +60,14 @@ FLATPAKS=(
 
   # Productivity / Notes
 
-
   # Communication
  
   # Utilities
   com.github.tchx84.Flatseal
   io.github.flattool.Warehouse
   it.mijorus.gearlever
+  io.github.getnf.embellish
+  org.localsend.localsend_app
 
 )
 
