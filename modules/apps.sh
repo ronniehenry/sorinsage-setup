@@ -22,6 +22,7 @@ ok "Flatpak ready."
 # -----------------------------------------------------------------------------
 log "Installing apt packages..."
 sudo apt install -y \
+  zsh \
   curl \
   wget \
   git \
@@ -92,3 +93,8 @@ if ! command -v zed &>/dev/null; then
 else
   ok "Zed already present — skipping."
 fi
+
+# -----------------------------------------------------------------------------
+# Ohmyzsh (for SorinSage / personal creative work)
+# -----------------------------------------------------------------------------
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
